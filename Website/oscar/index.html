@@ -1,0 +1,623 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="stylesheets/font-awesome.css" type="text/css">
+  <script src="scripts/functions.js"></script>
+  <title>Oscar Pet World</title>
+</head>
+<body>
+  <header>
+    <section class="head">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="logo">
+              <div class="col-md-2 col-sm-4">
+                <div class="paw">
+                  <img src="images/paw.jpg">
+                </div>
+                <div class="oscar">
+                  <a class="logo-link" href="#"  class="tabtweets" onclick="openContent(event, 'Home')">Oscar Pet World</a>
+                </div>
+              </div>
+              <div class="nav">
+                <div class="col-md-10 col-sm-8">
+                  <div class="link">
+                    <nav>
+                      <ul>
+                        <li><a href="#" class="tabtweets" onclick="openContent(event, 'Home')">Home</a></li>
+                        <li><a href="#" class="tabtweets" onclick="openContent(event, 'Products')">Products</a></li>
+                        <li><a href="#" class="tabtweets" onclick="openContent(event, 'Appointment')">Appointment</a></li>
+                        <li><a href="#" class="tabtweets" onclick="openContent(event, 'Contact')">Contact</a></li>
+                        <li><a href="#" class="tabtweets" onclick="openContent(event, 'About')">About</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+      function openContent(evt, pName) {
+          var i, tabsequence, tabtweets;
+          tabsequence = document.getElementsByClassName("tabsequence");
+          for (i = 0; i < tabsequence.length; i++) {
+              tabsequence[i].style.display = "none";
+          }
+          tabtweets = document.getElementsByClassName("tabtweets");
+          for (i = 0; i < tabtweets.length; i++) {
+              tabtweets[i].className = tabtweets[i].className.replace(" active", "");
+          }
+          document.getElementById(pName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+      </script>
+    </section>
+  </header>
+  <main>
+    <section class="slider tabsequence" id="Home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="slider-image">
+              <img class="mySlides" src="images/1.jpg">
+              <img class="mySlides" src="images/2.jpg">
+              <img class="mySlides" src="images/5.jpg">
+              <img class="mySlides" src="images/7.jpg">
+              <img class="mySlides" src="images/8.jpg">
+              <img class="mySlides" src="images/9.jpg">
+              <img class="mySlides" src="images/10.jpg">
+            </div>
+            <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+            </script>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="para">
+                <p>Welcome to Oscar Pet World, the primary objective of Oscar Pet World team is to provide Healthy pets with professional and authentic knowledge and service to pet and animal lovers.<br><br>
+                  There are many people who are interested in pets from the childhood. But in this busy wolrd, people forget to live when they die to earn. Our goal is to generate a sense of belongingness among people about animals and their well being. We strive to address core issues like tameness, care and management of pets, pet products and social concerns. Pets are the only companion who will be with you throughout your life, whatever be the situation you are in.<br><br>
+                  In a world which is becoming more impersonal, hurried and stressful, we provide our customers with a fun place to shop online, where you will find a great selection of pets and pet products at competitive prices and friendly, helpful assistance to take care of all your needs. There are List of Petshops in chennai, but we are different of all kind. At TamedPets, you won't get lost in the crowd and you won't get disappointed without finding your pet or pet needs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <p>&copy Rights 2008-2017. All rights reserved.</p>
+        </div>
+    </section>
+
+    <!-- products -->
+
+    <section class="nav-1 tab tabsequence" id="Products" style="display:none">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="link">
+              <nav>
+                <ul class="unorder">
+                  <li><a class="tabtell" href="#" onclick="openPic(event, 'Beds')">Beds</a></li>
+                  <li><a class="tabtell" href="#" onclick="openPic(event, 'Belts')">Belts</a></li>
+                  <li><a class="tabtell" href="#" onclick="openPic(event, 'Foods')">Foods</a></li>
+                  <li><a class="tabtell" href="#" onclick="openPic(event, 'Grooming')">Grooming</a></li>
+                  <li><a class="tabtell" href="#" onclick="openPic(event, 'Toys')">Toys</a></li>
+                  <li><a class="tabtell" href="#" onclick="openPic(event, 'Training Product')">Training Product</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="Beds" class="tabcontent page">
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/62260.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/11.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/12.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/13.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/14.jpeg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/9.jpeg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/16.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/3.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/4.jpg">
+                </div>
+              </div>
+            </div>
+            <div id="Belts" class="tabcontent page" style="display:none">
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/17.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/18.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/19.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/20.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/21.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/22.jpeg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/23.jpeg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/24.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/25.jpg">
+                </div>
+              </div>
+            </div>
+            <div id="Foods" class="tabcontent page" style="display:none">
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/36.png">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/34.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/30.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/27.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/28.png">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/29.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/31.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/32.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/35.jpeg">
+                </div>
+              </div>
+            </div>
+            <div id="Grooming" class="tabcontent page" style="display:none">
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/43.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/40.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/42.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/41.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/44.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/46.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/49.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/47.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/45.jpg">
+                </div>
+              </div>
+            </div>
+            <div id="Toys" class="tabcontent page" style="display:none">
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/51.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/50.png">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/52.jpeg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/54.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/55.jpeg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/56.jpeg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/57.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/58.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/59.jpg">
+                </div>
+              </div>
+            </div>
+            <div id="Training Product" class="tabcontent page" style="display:none">
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/60.jpeg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/68.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/62.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/66.jpeg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/63.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/64.jpeg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/67.jpg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/65.jpeg">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="beds">
+                  <img src="images/61.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+      function openPic(evt, pName) {
+          var i, tabcontent, tabtell;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tabtell = document.getElementsByClassName("tabtell");
+          for (i = 0; i < tabtell.length; i++) {
+              tabtell[i].className = tabtell[i].className.replace(" active", "");
+          }
+          document.getElementById(pName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+      </script>
+  </section>
+
+  <!-- appointment -->
+
+  <section class="form tabsequence" id="Appointment" style="display:none">
+    <div class="head-t1">
+      <h1>APPOINTMENT DETAILS</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-6">
+            <div class="tab-adjust">
+              <div class="virug">
+                <h3>VIRUGAMBAKKAM BRANCH</h3>
+              </div>
+              <form action="index.html" onsubmit="confirmInput()">
+                <div class="table">
+                  <div class="table-row">
+                    <div class="table-cell">
+                      <div class="n1">
+                        <label for="fname">Name:</label>
+                        <input type="text" name="fullname" placeholder="Full Name" id="fname">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">
+                      <div class="m1">
+                        <label for="mnum">Mob No:</label>
+                        <input type="text" name="mobnum" placeholder="Mobile Number" id="mnum">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">
+                      <div class="d1">
+                        <label for="dte">Date:</label>
+                        <input type="date" name="date" id="dte" placeholder="Date">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">
+                      <div class="t1">
+                        <label for="tme">Time:</label>
+                        <input type="time" name="time" id="tme" placeholder="Time">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">
+                      <button type="submit">SEND</button>
+                    </div>
+                    <script>
+                    function confirmInput() {
+                        fname = document.forms[0].fname.value;
+                        alert("Hello " + fname + "! Your Appointment Request is Sent");
+                    }
+                    </script>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="tab-adjust">
+              <div class="mouli">
+                <h3>MOULIVAKKAM BRANCH</h3>
+              </div>
+              <form action="mailto:sujithsrt10@gmail.com" onsubmit="confirmInput()">
+                <div class="table">
+                  <div class="table-row">
+                    <div class="table-cell">
+                      <div class="n1">
+                        <label for="yname">Name:</label>
+                        <input type="text" name="fullname" placeholder="Full Name" id="yname">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">
+                      <div class="m1">
+                        <label for="mobnum">Mob No:</label>
+                        <input type="text" name="mobnum" placeholder="Mobile Number" id="mobnum">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">
+                      <div class="d1">
+                        <label for="dtet">Date:</label>
+                        <input type="date" name="date" id="dtet" placeholder="Date">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">
+                      <div class="t1">
+                        <label for="tmet">Time:</label>
+                        <input type="time" name="time" id="tmet" placeholder="Time">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">
+                      <button type="submit">SEND</button>
+                    </div>
+                    <script>
+                    function confirmInput() {
+                        fname = document.forms[0].fname.value;
+                        alert("Hello " + fname + "! Your Appointment Request is Sent");
+                    }
+                    </script>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact details -->
+
+  <section class="form tabsequence" id="Contact" style="display:none">
+      <div class="head-t1">
+        <h1>CONTACT DETAILS</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-6">
+              <div class="tab-adjust">
+                <div class="virug">
+                  <h3>VIRUGAMBAKKAM BRANCH</h3>
+                </div>
+                <div class="title">
+                  <p>PAUL PET CLINIC</p>
+                  <p>[Morning Only]<br> Weekdays: 10.00 AM to 3.00 PM<br>Sunday: 10.30 AM to 1.00 PM</p>
+                </div>
+                <div class="addr">
+                  <address>
+                    NO, 142/36, KALIAMMAN KOIL STREET,<br> SANJAY GANDHI NAGAR, VIRUGAMBAKKAM,<br> CHENNAI-600092<br>
+                    MOBILE: 9841252112 / 7550080086
+                  </address>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="tab-adjust">
+                <div class="mouli">
+                  <h3>MOULIVAKKAM BRANCH</h3>
+                </div>
+                <div class="title">
+                  <p>OSCAR PET WORLD</p>
+                  <p>[Evening Only]<br> Weekdays: 6.00 PM to 9.00 PM<br>Sunday: On Appointment Only</p>
+                </div>
+                <div class="addr">
+                  <address>
+                    NO, 28-A RAJAGOPALAPURAM MAIN ROAD,<br>SULOCHANA NAGAR,[NEAR BAI KADAI BUS STOP] MOULIVAKKAM, CHENNAI-600125.<br> MOBILE: 9841252112 / 7550080086
+                  </address>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="about tabsequence" id="About" style="display:none">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="picture">
+            <img src="images/1.jpg">
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="about-para">
+            <h1>Dr.Susan Alex</h1>
+            <p>Veterinary Surgeon<br>Registered No: 2270</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

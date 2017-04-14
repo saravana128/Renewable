@@ -1,0 +1,302 @@
+ @import url('https://fonts.googleapis.com/css?family=Oleo+Script:400,700');
+  @import url('https://fonts.googleapis.com/css?family=Lobster');
+   @import url('https://fonts.googleapis.com/css?family=Lobster|Merriweather:700');
+
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  float: left;
+}
+* {
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  float: left;
+}
+header .head {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 0px #888888;
+  background: #6731b7;
+  padding: 10px 0px;
+}
+header .nav {
+  margin: 0px;
+  padding: 0px;
+}
+header .head .link {
+  width: 100%;
+  float: left;
+  margin: 17px 0px;
+}
+header .link nav {
+  width: 100%;
+}
+header .link nav ul {
+  width: 100%;
+  float: left;
+}
+header .head .logo-link {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Oleo Script', cursive;
+  font-weight: 700;
+}
+header .head .logo .paw {
+  width: 20%;
+  float: left;
+  border-radius: 12px;
+  margin-top: 5px;
+
+}
+header .head .oscar .logo-link {
+  width: 100%;
+  float: left;
+}
+header .head .oscar {
+width: 80%;
+float: left;
+}
+header .head .logo img {
+  width: 100%;
+  border-radius: 12px;
+  margin-right: 10px;
+  float: left;
+}
+header .head .nav li {
+  float: left;
+  list-style-type: none;
+  width: 20%;
+  text-align: center;
+  cursor: pointer;
+}
+header .head .nav li:hover {
+  background: #bbabd3;
+  transition: 0.3s all;
+  border-radius: 4px;
+}
+header .head .nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  font-size: 18px;
+}
+header .head .nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+/********/
+main {
+  width: 100%;
+  float: left;
+}
+main .slider {
+  width: 100%;
+  float: left;
+  padding: 10px 0px;
+}
+main .slider .para {
+  padding: 15px 0px;
+}
+main .slider .mySlides {
+  display: none;
+}
+main .slider .slider-image {
+  width: 100%;
+  margin: 20px 0px;
+}
+main .slider .slider-image img {
+  width: 100%;
+  /*height: 70%;*/
+  border-radius: 10px;
+  border: 2px solid #000;
+  box-shadow: 1px 1px 5px 1px #000;
+}
+/*main .slide-para {
+  width: 100%;
+  float: left;
+}*/
+main .slide-para .para {
+  width: 100%;
+  float: left;
+  padding: 10px 0px;
+}
+main .para p {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+}
+main .nav-1 {
+  width: 100%;
+  float: left;
+  background: #6731b7;
+  padding: 5px 0px;
+  margin-top: 5px;
+}
+main .nav-1 .link {
+  width: 100%;
+  float: left;
+}
+main .nav-1 ul {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  float: left;
+  background: #6731b7;
+  border-radius: 5px;
+}
+main .nav-1 nav ul li {
+  list-style-type: none;
+  float: left;
+  width: 16.66%;
+  text-align: center;
+  cursor: pointer;
+}
+main .nav-1 nav ul li:hover {
+  background: #bbabd3;
+  transition: 0.3s all;
+}
+main .nav-1 nav ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  color: #fff;
+}
+/*main .prod-image {
+  width: 100%;
+  float: left;
+}*/
+main .tab {
+  background: #fff;
+}
+main .tab .page {
+  width: 100%;
+  float: left;
+  margin: 15px 0px;
+}
+main .tab .page .beds{
+  width: 100%;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 2px 1px #ccc;
+}
+
+/***appointment***/
+
+main .form {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.table {
+  display: table;
+}
+.table-row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+}
+main .form .head-t1 h1 {
+  margin: 0px;
+}
+main .form label {
+  display: block;
+  margin-top: 5px;
+}
+main .form .tab-adjust {
+  border: 1px solid #ccc;
+  width: 100%;
+  float: left;
+  border-radius: 5px;
+}
+main .head-t1 {
+  font-family: 'Oleo Script', cursive;
+  font-weight: 700;
+  box-shadow: 1px 1px 1px 1px #000;
+  display: inline-block;
+  width: 40%;
+  border-radius: 5px;
+  background: #ccc;
+  border: 1px solid #000;
+  margin: 20px 0px;
+}
+main .tab-adjust button {
+  width: 42%;
+  background: #6731b7;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 5px;
+}
+main .form .virug, main .form .mouli {
+  width: 100%;
+  float: left;
+  border-radius: 2px;
+  background: #ccc;
+  border: 1px solid #000;
+}
+main .virug h3, main .mouli h3 {
+  margin: 0px;
+}
+main .title p {
+  width: 100%;
+  float: left;
+  font-size: 18px;
+  font-family: 'Oleo Script', cursive;
+  font-weight: 700;
+}
+main .about {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+main .about .picture {
+  width: 100%;
+  float: left;
+  margin: 20px 0px;
+}
+main .about .picture img {
+  width: 50%;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px 1px #000;
+}
+main .about .about-para h1 {
+  margin: 0px;
+  font-family: 'Oleo Script', cursive;
+  font-weight: 700;
+
+}
+main .about .about-para p {
+  margin: 0px;
+  font-size: 20px;
+  font-family: 'Oleo Script', cursive;
+  font-weight: 700;
+}
+main .about .about-para {
+  width: 50%;
+  display: inline-block;
+  background: #ccc;
+}
+main .foot {
+  width: 100%;
+  float: left;
+  background: #e6e8ed;
+  text-align: center;
+}
+main .foot p {
+  opacity: 0.5;
+  padding: 2px 0px;
+  margin: 0px;
+}

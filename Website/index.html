@@ -1,0 +1,110 @@
+<html>
+<head>
+    <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/font-awesome.css" type="text/css">
+    <script src="scripts/functions.js"></script>
+</head>
+<body>
+    <header>
+        <section class="head">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <div class="ren">
+                            <p>RENEWABLE ENERGY</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="slider">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="slider-image">
+                  <img class="mySlides" src="images/s1.png">
+                  <img class="mySlides" src="images/s2.jpg">
+                  <img class="mySlides" src="images/s3.jpg">
+                  <img class="mySlides" src="images/s4.jpg">
+                </div>
+                <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                       x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}
+                    x[myIndex-1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+                </script>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="para">
+                    <p>Wind energy is a form of solar energy. Wind energy (or wind power) describes the process by which wind is used to generate electricity. Wind turbines convert the kinetic energy in the wind into mechanical power. A generator can convert mechanical power into electricity Requirments.
+                        In general, wind speeds are as follows: 32kph  minimum is required to start rotating most small wind turbines. 12.6 kph (3.5 m/s) is the typical cut-in speed, when a small turbine starts generating power. 36–54 kph (10–15 m/s) produces maximum generation power.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="slider">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="slide">
+                  <img class="slides" src="images/w1.jpg">
+                  <img class="slides" src="images/w2.jpg">
+                  <img class="slides" src="images/w3.jpg">
+                  <img class="slides" src="images/w4.jpg">
+                </div>
+                <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("slides");
+                    for (i = 0; i < x.length; i++) {
+                       x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}
+                    x[myIndex-1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+                </script>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="para">
+                    <p>
+                        1. The energy produced or radiated by the sun.
+                        2. Energy derived from the sun's radiation. Solar energy is used on Earth in various ways. It is used as a passive source of energy, for example, in the form of sunlight that comes through a window and heats up a room, or as an active source, as in the conversion of sunlight to electrical energy in solar cells.
+                        The construction of mega solar power plants requires a large land area. While it will also depend on the circumstances of the installation of the solar cell module, the construction of a 1MW mega solar power plant will require land that has an area of around 20,000m2 to 30,000m2 (equivalent to 75 to 115 tennis courts). The land must also be free of mountain forests and buildings that may intercept the sunlight. Another important requirement in terms of construction is that the land is as flat as possible and has roads of around 5m in width.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
